@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Spinner dengan ukuran yang diperbaiki -->
+    <Spinner
+        android:id="@+id/spinnerBangunDatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingVertical="8dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- EditText untuk input angka -->
+    <EditText
+        android:id="@+id/etInput1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nilai pertama"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etInput2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nilai kedua"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:visibility="gone"/> <!-- Sembunyikan dulu, nanti ditampilkan sesuai bangun datar -->
+
+    <!-- Tombol Hitung -->
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_marginTop="16dp" />
+
+    <!-- TextView untuk menampilkan hasil -->
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil akan muncul di sini"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
